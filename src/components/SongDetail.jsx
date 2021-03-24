@@ -5,7 +5,13 @@ const SongDetail = ({ selectedSong }) => {
   if (!selectedSong) {
     return <div>Select a song</div>;
   }
-  return <div>Title: {selectedSong.title}</div>;
+
+  return (
+    <div>
+      <div>Title: {selectedSong.title}</div>
+      <div>Duration: {selectedSong.duration}</div>
+    </div>
+  );
 };
 
 const mapStateToProps = (state) => {
