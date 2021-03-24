@@ -18,6 +18,7 @@ const selectedSongReducer = (selectedSong = null, action) => {
 };
 
 export default combineReducers({
+  // The keys here are the keys in the state object eg. state.selectedSong
   songs: songsReducer,
   selectedSong: selectedSongReducer,
 });
