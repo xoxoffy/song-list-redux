@@ -1,8 +1,13 @@
+import SongList from "./SongList";
+import { Container } from "@material-ui/core";
+import SongDetail from "./SongDetail";
+
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <Container maxWidth="md">
+      <SongList />
+      <SongDetail />
+    </Container>
   );
 };
 
